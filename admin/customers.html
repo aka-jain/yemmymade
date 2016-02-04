@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yemmy maids</title>
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css">
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script src="../js/main.js"></script>
+</head>
+<body class="admin-bg">
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img src="../img/logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				<small class="contact-header">Call us today to schedule your cleaning - 661-993-260</small>
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a id="login-btn">Login</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="container admin">
+		<header class="admin-header">
+			<div class="admin-header-left">
+				<ul class="admin-menu">
+					<li><a href="customers.html">Customers</a></li>
+					<li><a href="employees.html">Employees</a></li>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="transactions.html">Transactions</a></li>
+				</ul>
+			</div>
+			<div class="admin-header-right">
+				<form class="search-form">
+					<div class="search-box">
+						<input type="text" placeholder="Search">
+						<img src="../img/search.png">
+					</div>
+					<div class="filter-icon">
+						<img src="../img/filter.png">
+					</div>
+				</form>
+			</div>
+		</header>
+
+		<div class="filter-section">
+			<div class="filter-section-header clr">
+				<div class="half left">
+					<h3>Filter</h3>
+				</div>
+				<div class="half left text-right">
+					<div class="close-button">
+						<img src="../img/close.png">
+					</div>
+				</div>
+			</div>
+			<fieldset>
+				<div class="field-container clr">
+					<div class="half left">
+						<input type="checkbox" id="pending-order" name="pending-order"><label for="pending-order">Customers with pending orders<label>
+					</div>
+					<div class="half left">
+						<input type="checkbox" id="completed-order" name="completed-order"><label for="completed-order">Customers with completed orders<label>
+					</div>
+					<div class="half left">
+						<input type="checkbox" id="imp-customers" name="imp-customers"><label for="imp-customers">Only important customers<label>
+					</div>
+					<div class="half left">
+						<select>
+							<option>10 customers per page</option>
+						</select>
+					</div>					
+				</div>
+			</fieldset>
+		</div>
+
+	</section>
+
+	<div class="backdrop"></div>
+	<section class="container-signin signin">
+		<div class="signin-header">
+			<h1>Sign In</h1>
+			<a href="signup.html">Create an account</a>
+			<img src="img/signin-header.png">
+		</div>
+		<form class="signin-form">
+			<fieldset class="field-container clr">
+				<input type="text" id="signin-email" name="signin-email" class="full-width bordered-input-text" placeholder="Email or login">
+				<input type="text" id="singin-password" name="singin-password" class="full-width bordered-input-text" placeholder="Password">
+				<div class="checkbox-input">
+					<input type="checkbox" id="remember-me" name="remember-me"><label for="remember-me">Remember me</label>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="button" class="full-width btn btn-large purple-bg" id="signin-submit" value="Sign in">
+			</div>
+			<div class="text-center divider">
+				<img src="img/divider.png">
+			</div>
+			<div class="text-center clr">
+				<input type="button" id="singin-facebook" class="btn btn-medium facebook-btn" value="Sign In via Facebook">
+				<input type="button" id="singin-twitter" class="btn btn-medium twitter-btn" value="Sign In via Twitter">
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">House Cleaning</a></li>
+					<li><a href="#">Move-in Cleaning</a></li>
+					<li><a href="#">Move-out Cleaning</a></li>
+					<li><a href="#">Post Construction Cleaning</a></li>
+					<li><a href="#">Pre-open House Cleaning</a></li>
+					<li><a href="#">Pre-party Cleaning</a></li>
+					<li><a href="#">Afer Party Cleaning</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us</a></li>
+					<li><a href="#">Phone : 661 993 260</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="../img/fb.png"></a></li>
+					<li><a href="#"><img src="../img/tw.png"></a></li>
+					<li><a href="#"><img src="../img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			<div class="half left">
+				&copy; YemmyMaids - All rights reserved
+			</div>
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="../img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

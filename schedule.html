@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yemmy maids</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body class="patterned-body">
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img src="img/logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				<small class="contact-header">Call us today to schedule your cleaning - 661-993-260</small>
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a href="">Login</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page-heading text-center">
+		<h1>Complete your Booking</h1>
+		<p>We'll need a few more details to complete your booking</p>
+	</div>
+
+	<section class="container-small schedule">
+		<form class="schedule-form">
+			<fieldset>
+				<legend class="bold">Contact Info</legend>
+				<p class="field-description">We'll use this information to contact you</p>
+				<div class="field-container clr">
+					<input type="text" id="first-name" name="first-name" class="bordered-input-text half left left-field" placeholder="First Name">
+					<input type="text" id="last-name" name="last-name" class="bordered-input-text half left right-field" placeholder="Last Name">
+					<input type="text" id="mobile" name="mobile" class="bordered-input-text half left left-field" placeholder="Mobile number">
+					<input type="text" id="email" name="email" class="bordered-input-text half left right-field" placeholder="Email">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend class="bold">Service Address</legend>
+				<p class="field-description">Where would you like us to clean ?</p>
+				<div class="field-container clr">
+					<input type="text" id="address" name="address" class="bordered-input-text full-width left" placeholder="Address">
+					<input type="text" id="city" name="city" class="bordered-input-text half left left-field" placeholder="City">
+					<input type="text" id="state" name="state" class="bordered-input-text half left right-field" placeholder="State">
+					<input type="text" id="zip-code" name="zip-code" class="bordered-input-text half left left-field" placeholder="Zip Code">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend class="bold">When</legend>
+				<p class="field-description">When would you like us to come ?</p>
+				<div class="field-container clr">
+					<input type="text" id="date" name="date" class="bordered-input-text half left left-field" placeholder="Date (MM/DD/YYYY)">
+					<input type="text" id="time" name="time" class="bordered-input-text half left right-field" placeholder="Time (HH:MM TT)">
+					<div class="how-often left">
+						<input type="radio" id="one-time" name="how-often" class="how-often-item left"><label for="one-time" class="how-often-item-label left one-fourth">One Time</label>
+						<input type="radio" id="weekly" name="how-often" class="how-often-item left"><label for="weekly" class="how-often-item-label left one-fourth">Weekly</label>
+						<input type="radio" id="bi-weekly" name="how-often" class="how-often-item left"><label for="bi-weekly" class="how-often-item-label left one-fourth">Bi-weekly</label>
+						<input type="radio" id="monthly" name="how-often" class="how-often-item left"><label for="monthly" class="how-often-item-label left one-fourth">Monthly</label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend class="bold">Services</legend>
+				<p class="field-description">Select your services</p>
+				<div class="field-container clr">
+					<label for="bedrooms" class="left one-third"><img src="img/bed-grey.png"><span>Bedrooms</span><span id="range-value-bedrooms">0</span></label><input type="range" id="bedrooms" name="bedrooms" max="10" value="0" class="purple-range left">
+				</div>
+				<div class="field-container clr">
+					<label for="bathrooms" class="left one-third"><img src="img/tap-grey.png"><span>Bathrooms</span><span id="range-value-bathrooms">0</span></label><input type="range" id="bathrooms" name="bathrooms" max="10" value="0" class="purple-range left">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend class="bold">Select add-on services</legend>
+				<p class="field-description">Any extra services you'd like us to do</p>
+				<div class="field-container clr">
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="green-cleaning" name="add-on" class="add-on-item"><label for="green-cleaning" class="add-on-item-label"><img src="img/green-cleaning.png"><div class="add-on-price">+$10</div></label>
+						<p class="text-center">Green Cleaning</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="fridge-cleaning" name="add-on" class="add-on-item"><label for="fridge-cleaning" class="add-on-item-label"><img src="img/fridge.png"><div class="add-on-price">+$25</div></label>
+						<p class="text-center">Inside Fridge cleaning</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="oven-cleaning" name="add-on" class="add-on-item"><label for="oven-cleaning" class="add-on-item-label"><img src="img/oven.png"><div class="add-on-price">+$25</div></label>
+						<p class="text-center">Inside oven Cleaning</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="cabinets-cleaning" name="add-on" class="add-on-item"><label for="cabinets-cleaning" class="add-on-item-label"><img src="img/cabinet.png"><div class="add-on-price">+$25</div></label>
+						<p class="text-center">Inside cabinets and drawers</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="windows-cleaning" name="add-on" class="add-on-item"><label for="windows-cleaning" class="add-on-item-label"><img src="img/window.png"><div class="add-on-price">+$60</div></label>
+						<p class="text-center">Inside windows Cleaning</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="garage-cleaning" name="add-on" class="add-on-item"><label for="garage-cleaning" class="add-on-item-label"><img src="img/garage.png"><div class="add-on-price">+$50</div></label>
+						<p class="text-center">Garage Cleaning</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="laundry-cleaning" name="add-on" class="add-on-item"><label for="laundry-cleaning" class="add-on-item-label"><img src="img/laundry.png"><div class="add-on-price">+$25</div></label>
+						<p class="text-center">Laundry - 1 load</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="move-in-out" name="add-on" class="add-on-item"><label for="move-in-out" class="add-on-item-label"><img src="img/move.png"><div class="add-on-price">+$60</div></label>
+						<p class="text-center">Move-in / Move-out</p>
+					</div>
+					<div class="one-third add-on-circle responsive left">
+						<input type="checkbox" id="same-day-booking" name="add-on" class="add-on-item"><label for="same-day-booking" class="add-on-item-label"><img src="img/sameday.png"><div class="add-on-price">+$25</div></label>
+						<p class="text-center">Same day booking</p>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="booking-summery">
+				<legend class="bold row-border-white full-width">Booking summery</legend>
+				<div class="field-container clr">
+					<div class="half left row-border-white booking-summery-item">
+						<img src="img/bed.png">
+						<span id="summery-bed-number">1</span>
+						<span>Bedroom</span>
+					</div>
+					<div class="half left row-border-white booking-summery-item">
+						<img src="img/tap.png">
+						<span id="summery-bath-number">1</span>
+						<span>Bathroom</span>
+					</div>
+					<div class="full-width left row-border-white booking-summery-item">
+						<img src="img/repeat.png">
+						<span>1</span>
+						<span>Every two weeks</span>
+					</div>
+					<div class="full-width left row-border-white booking-summery-item">
+						<img src="img/fridge.png">
+						<span>1</span>
+						<span>Inside fridge cleaning</span>
+					</div>
+					<div class="full-width left booking-summery-item booking-promo">
+						<label for="promocode" class="left">Do you have a Promo Code ?</label><br />
+						<input type="text" id="promocode" name="promocode" class=" half bordered-input-text" placeholder="Promo Code"><br />
+						<input type="button" class="btn btn-large apply-promo" value="Apply">
+					</div>
+					<div class="full-width left booking-summery-item">
+						<small>Subtotal: $<span id="summery-subtotal">50</span></small><br />
+						<small>Discount: $<span id="summery-discount">25</span></small>
+					</div>
+					<div class="half left booking-summery-item">
+						<a href="rates.html">View Rates</a>
+					</div>
+					<div class="half left booking-summery-item summery-total">
+						Total: <span id="summery-total">$100</span>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="payment-details">
+				<legend class="bold">Payment Details</legend>
+				<p class="field-description">Enter your card information below. You will be charged after service has been rendered.</p>
+				<div class="field-container clr">
+					<input type="text" id="card-number" name="card-number" class="bordered-input-text half responsive left left-field" placeholder="Card number">
+					<div class="one-fourth responsive fieldgroup left">
+						<div class="clr">
+							<input type="text" id="card-month" name="card-month" class="bordered-input-text fieldgroup-left half left" placeholder="MM">
+							<input type="text" id="card-year" name="card-year" class="bordered-input-text fieldgroup-right half left" placeholder="YY">
+						</div>
+					</div>
+					<input type="text" id="card-cvc" name="card-cvc" class="bordered-input-text one-fourth responsive left" placeholder="CVC">
+					<div class="full-width left payment-cards">
+						<img src="img/maestro.png">
+						<img src="img/amex.png">
+						<img src="img/visa.png">
+						<img src="img/paypal.png">
+					</div>
+					<div class="full-width left payment-ssl">
+						<img src="img/lock.png">
+						<span>Safe and secure 256-BIT SSL encrypted payment.</span>
+					</div>
+					<div class="full-width left terms-checkbox">
+						<input type="checkbox" id="terms-checkbox" name="terms-checkbox" class="terms-checkbox"><label for="terms-checkbox" class="terms-checkbox-label"> I agree to the <a href="">terms of service</a> and <a href="">privacy policy</a></label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="button" class="btn btn-large green-bg" value="Book now">
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">House Cleaning</a></li>
+					<li><a href="#">Move-in Cleaning</a></li>
+					<li><a href="#">Move-out Cleaning</a></li>
+					<li><a href="#">Post Construction Cleaning</a></li>
+					<li><a href="#">Pre-open House Cleaning</a></li>
+					<li><a href="#">Pre-party Cleaning</a></li>
+					<li><a href="#">Afer Party Cleaning</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us</a></li>
+					<li><a href="#">Phone : 661 993 260</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/tw.png"></a></li>
+					<li><a href="#"><img src="img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			<div class="half left">
+				&copy; YemmyMaids - All rights reserved
+			</div>
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

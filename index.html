@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yemmy maids</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img src="img/logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				<small class="contact-header">Call us today to schedule your cleaning - 661-993-260</small>
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a id="login-btn">Login</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="landing-screen">
+		<div class="landing-screen-bg">
+			<img src="img/ls-bg.jpg">
+		</div>
+		<div class="welcome-text text-center small-padding responsive">
+			<h1>A domestic referral agency for your house keeping solutions</h1>
+			<p>Select the number of maids and approximate time (in hours) needed for your unique housekeeping needs</p>
+		</div>
+		<div class="landing-form-video">
+			<div class="container clr">
+				<div class="half responsive left">
+					<form class="ls-form">
+						<div class="form-group clr">
+							<label for="ls-bathrooms" class="one-third responsive left">Bathrooms : <span id="range-value-ls-bathrooms">0</span></label>
+							<input type="range" max="10" value="0" id="ls-bathrooms" name="ls-bathrooms" class="two-third responsive left">
+						</div>
+						<div class="form-group clr">
+							<label for="ls-bedrooms" class="one-third responsive left">Bedrooms : <span id="range-value-ls-bedrooms">0</span></label>
+							<input type="range" max="10" value="0" id="ls-bedrooms" name="ls-bedrooms" class="two-third responsive left">
+						</div>
+						<div class="form-group clr">
+			                <label for="ls-schedule" class="one-third responsive left">Set Schedule: </label>
+			                <input type="datetime-local" value="2016-04-16T23:20" min="2016-01-01T00:00" max="2017-01-01T00:00"  class="ls-datetime left"/>
+			            </div>
+			            <div class="form-group clr">
+			            	<label for="ls-workarea" class="one-third responsive left">Set Workarea: </label>
+			            	<select class="two-third responsive left" id="ls-workarea">
+			            		<option>Beverly Hils</option>
+			            	</select>
+			            </div>
+			            <a href="#" class="ls-more">More options</a>
+			            <input type="submit" class="btn btn-large btn-block purple-bg" value="Schedule your appointment">
+					</form>
+				</div>
+				<div class="ls-video half responsive left">
+					<iframe width="500" height="280" src="https://www.youtube.com/embed/KK9bwTlAvgo" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="container text-center">
+			<h2>About <span class="purple-color bold">Yemmy</span><span class="bold">Maids</span></h2>
+			<img class="heading-separator" src="img/separator.png">
+			<p class="container">Yemmy Maids is a domestic referral agency serving  San Fernando Valle and its surrounding areas. We are dedicated to providing only the best housekeeping  services to our clients. The service providers that we refer are professionals, experienced, friendly, hardworking and reliable. Thorough reference, work eligibility and background checks are always completed before our service providers are referred to your homes. Our clients’ trust, security and satisfaction are our priority.</p>
+			<p class="container">Give us a call today. No job is too large or too small.  Our services are guaranteed. If you are not completely satisfied, call us within 24 hours and we will send another team of service providers  back at no additional charge.
+			</p>
+		</div>
+	</section>
+
+	<section class="how-it-works text-center">
+		<h2>How <span class="purple-color">Yemmy</span><span class="bold">Maids</span> works</h2>
+		<img class="heading-separator" src="img/separator.png">
+		<div class="container clr">
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/booknow.png" class="hiw-bg">
+						<img src="img/mouse.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>Book</h3>
+						<p>Select the date and time you'd like your professional to show</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/clean.png" class="hiw-bg">
+						<img src="img/broom.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>Clean</h3>
+						<p>A certified cleaner comes over and cleans your place</p>
+					</div>
+				</div>
+			</div>
+			<div class="small-padding one-third responsive left">
+				<div class="hiw-wrapper">
+					<div class="hiw-top">
+						<img src="img/relax.png" class="hiw-bg">
+						<img src="img/sofa.png" class="hiw-icon">
+					</div>
+					<div class="hiw-bottom text-center">
+						<h3>Relax</h3>
+						<p>Sit back and relax. Enjoy your sparkling home</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="appointment text-center">
+		<a href="#" class="btn btn-large purple-bg appointment-btn">Book Appointment</a>
+		<p class="purple-color">OR</p>
+		<p>Call us today to schedule your cleaning</p>
+		<div class="appointment-number">
+			<img src="img/phone.png">
+			<span>661-993-260</span>
+		</div>
+	</section>
+
+	<section class="services text-center">
+		<h2>Our Services</h2>
+		<img class="heading-separator" src="img/separator.png">
+		<div class="container clr">
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/house-cleaning.png">
+				</div>
+				<div class="services-text">House Cleaning</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/move-in-out.png">
+				</div>
+				<div class="services-text">Move-in/Move-out Cleaning</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/postconstruction.png">
+				</div>
+				<div class="services-text">Post Construction Cleaning</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/preopen.png">
+				</div>
+				<div class="services-text">Pre-Open House Cleaning</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/preparty.png">
+				</div>
+				<div class="services-text">Pre-Party Cleaning</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="services-circle">
+					<img src="img/postparty.png">
+				</div>
+				<div class="services-text">After Party Cleaning</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rates text-center">
+		<h2>Our Rates</h2>
+		<img class="heading-separator" src="img/separator-white.png">
+		<div class="container clr">
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>1 Bedroom</p>
+							<div class="rates-badge">1</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>1 Bathroom</p>
+							<div class="rates-badge">1</div>
+						</div>
+					</div>
+					<div class="rates-price">$90</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>1 Bedroom</p>
+							<div class="rates-badge">1</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>2 Bathroom</p>
+							<div class="rates-badge">2</div>
+						</div>
+					</div>
+					<div class="rates-price">$110</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>1 Bedroom</p>
+							<div class="rates-badge">1</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>3 Bathroom</p>
+							<div class="rates-badge">3</div>
+						</div>
+					</div>
+					<div class="rates-price">$130</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>2 Bedroom</p>
+							<div class="rates-badge">2</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>1 Bathroom</p>
+							<div class="rates-badge">1</div>
+						</div>
+					</div>
+					<div class="rates-price">$110</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>2 Bedroom</p>
+							<div class="rates-badge">2</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>2 Bathroom</p>
+							<div class="rates-badge">2</div>
+						</div>
+					</div>
+					<div class="rates-price">$130</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+			<div class="large-padding one-third responsive left">
+				<div class="rates-circle">
+					<div class="rates-icons clr">
+						<div class="rates-bedroom half left">
+							<img src="img/bed.png">
+							<p>2 Bedroom</p>
+							<div class="rates-badge">2</div>
+						</div>
+						<div class="rates-bathroom half left">
+							<img src="img/tap.png">
+							<p>4 Bathroom</p>
+							<div class="rates-badge">4</div>
+						</div>
+					</div>
+					<div class="rates-price">$170</div>
+					<a href="#" class="btn btn-medium rates-book">Book Now</a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn btn-large all-rates-btn">View all rates</a>
+	</section>
+
+	<section class="faq text-center">
+		<h2>FAQ</h2>
+		<img src="img/separator.png" class="heading-separator">
+		<div class="container">
+			<div class="faq-single">
+				<h3>How do I pay for cleaning services ?</h3>
+				<p>We accept  payment by check and through PayPal.  The client agrees to pay Yemmy Maids in full when the service is complete unless prior arrangements have been made. </p>
+			</div>
+			<div class="faq-single">
+				<h3>What if I need to cancel or reschedule a cleaning appointment?</h3>
+				<p>Simply call the office 48 hours before your scheduled appointment and we will do our best to reschedule the appointment to accommodate your scheduling needs. If we receive less than 48 hours notice, it will be necessary for us to charge 50% of the cleaning price. If the notice is less than 24 hours or we can’t access your property, it will be necessary for us to charge... <a href="#" >Read more</a></p>
+			</div>
+			<div class="faq-single">
+				<h3>Will I always have the same service providers for each scheduled service?</h3>
+				<p>We make every effort to provide you with the same service providers each and every time we clean your home, but there are times that a change is required due to sickness, injury, etc.</p>
+			</div>
+		</div>
+		<a href="#" class="btn btn-large purple-bg all-faq-btn">View all FAQs</a>
+	</section>
+
+	<div class="backdrop"></div>
+	<section class="container-signin signin">
+		<div class="signin-header">
+			<h1>Sign In</h1>
+			<a href="signup.html">Create an account</a>
+			<img src="img/signin-header.png">
+		</div>
+		<form class="signin-form">
+			<fieldset class="field-container clr">
+				<input type="text" id="signin-email" name="signin-email" class="full-width bordered-input-text" placeholder="Email or login">
+				<input type="text" id="singin-password" name="singin-password" class="full-width bordered-input-text" placeholder="Password">
+				<div class="checkbox-input">
+					<input type="checkbox" id="remember-me" name="remember-me"><label for="remember-me">Remember me</label>
+				</div>
+			</fieldset>
+			<div class="text-center">
+				<input type="button" class="full-width btn btn-large purple-bg" id="signin-submit" value="Sign in">
+			</div>
+			<div class="text-center divider">
+				<img src="img/divider.png">
+			</div>
+			<div class="text-center clr">
+				<input type="button" id="singin-facebook" class="btn btn-medium facebook-btn" value="Sign In via Facebook">
+				<input type="button" id="singin-twitter" class="btn btn-medium twitter-btn" value="Sign In via Twitter">
+			</div>
+		</form>
+	</section>
+
+	<footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">House Cleaning</a></li>
+					<li><a href="#">Move-in Cleaning</a></li>
+					<li><a href="#">Move-out Cleaning</a></li>
+					<li><a href="#">Post Construction Cleaning</a></li>
+					<li><a href="#">Pre-open House Cleaning</a></li>
+					<li><a href="#">Pre-party Cleaning</a></li>
+					<li><a href="#">Afer Party Cleaning</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us</a></li>
+					<li><a href="#">Phone : 661 993 260</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/tw.png"></a></li>
+					<li><a href="#"><img src="img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			<div class="half left">
+				&copy; YemmyMaids - All rights reserved
+			</div>
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

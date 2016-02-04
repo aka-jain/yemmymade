@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Yemmy maids</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="landing-screen-bg">
+		<img src="img/ls-bg.jpg"></div>
+	<header class="site-header">
+		<div class="container clr">
+			<div class="site-logo one-third left responsive responsive-text-center">
+				<img src="img/logo.png">
+			</div>
+			<div class="text-right responsive-text-center two-third left responsive">
+				<small class="contact-header">Call us today to schedule your cleaning - 661-993-260</small>
+				<div class="btn btn-medium purple-bg menu-btn">Menu</div>
+				<div class="main-nav">
+					<ul class="main-nav-list list-inline">
+						<li><a id="login-btn">Login</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">FAQ</a></li>
+						<li><a href="">Rates</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Careers</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<section class="applicant  text-center">
+		<div class=" customer-bg   container applicant-bg customers-bg">
+			<div class="  customer-container clr">
+			<div class="two-third responsive left text-left customers-header">
+<ul>
+	<li><a href="customers.html" class="dark">Customers</a></li>
+	<li><a href="employees.html">Employees</a></li>
+	<li ><a href="orders.html" >Orders</a></li>
+	<li><a href="transaction.html">Transactions</a></li>
+	<li class="filter"><img  src="img/filter.png"></li>
+</ul>
+			</div>
+			<div class="one-third right responsive text-right search customers-search ">
+				<div class="search-icon "><img src="img/search.png"></div>
+				
+				<input type="text" class=" bordered-input-text  responsive right" placeholder="search">
+			</div>
+			</div>
+
+<section class="responsive filter-details  text-left">
+	<h3 class="light-bold">Filters</h3>
+	<img id="cross" src="img/crosss.png">
+	<div class="container-large clr">
+	<div class="half responsive left left-filter">
+		
+		<input type="checkbox" id="pending-order"/>
+		<label for="pending-order"><small>Customers with pending orders</small></label>
+
+		<input type="checkbox" id="important-customer"/>
+		<label for="important-customer"><small>Only important customers</small></label>
+	
+	</div>
+
+	<div class="half responsive left right-filter">
+	<div class="label-value">
+		
+		<input type="checkbox" id="completed-order" value="yes"/>
+		<label for="completed-order"><small>Customers with completed orders</small></label>
+	
+	</div>
+
+	</div>
+
+</div>
+<div class="container-large clr">
+<div class=" responsive left btn-filter">
+	<div class="clr">
+		<div class="responsive left">
+			<div class="btn btn-medium btn-apply text-center">Apply Filters</div>
+		</div>
+		<div class="responsive left">
+			<div class="btn btn-medium btn-clear text-center">Clear Filters</div>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+
+<div class="responsive text-left customers-details ">
+	<div class="side-arrow right"><img src="img/next-blue.png"></div>
+	<div class="complete-list">
+		<div class="complete-inner border-dark">
+
+			<ul id="heads">
+				<li class="customers-name">
+				<h4 class="content-pro">Customer Name</h4></li>
+				<li class="customers-order">
+				<h4 class="content-pro">Orders</h4></li>
+				<li class="customers-important">
+				<h4 class="content-pro">Important</h4></li>
+			</ul>
+
+			<ul class="main-listing">
+			<li class="list-listing pending-filter">
+			<ul id="details-dark" > 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order orange">
+					<small class="content-pro">5 pending orders</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star.png"></small>
+				</li>
+			</ul>
+			</li>
+
+			<li class="list-listing pending-important-filter">
+			<ul id="details-dark"> 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order orange">
+					<small class="content-pro">2 pending orders</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star-imp.png"></small>
+				</li>
+			</ul>
+		</li>
+
+			<li class="list-listing completed-filter">
+			<ul id="details-dark" > 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order green">
+					<small class="content-pro">no pending order</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star.png"></small>
+				</li>
+			</ul>
+		</li>
+
+			<li class="list-listing completed-important-filter">
+			<ul id="details-dark" > 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order green">
+					<small class="content-pro">no pending order</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star-imp.png"></small>
+				</li>
+			</ul>
+		</li>
+
+		<li class="list-listing completed-important-filter">
+			<ul id="details-dark" > 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order green">
+					<small class="content-pro">no pending order</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star-imp.png"></small>
+				</li>
+			</ul>
+		</li>
+
+			<li class="list-listing pending-important-filter">
+			<ul id="details-dark"> 
+				<li class="list-name">
+					<small class="content-pro">Harry Porter</small>
+				</li>
+				<li class="list-order orange">
+					<small class="content-pro">1 pending orders</small>
+				</li>
+				<li class="list-important">
+					<small class="content-pro"><img src="img/star-imp.png"></small>
+				</li>
+			</ul>
+		</li>
+	</ul>
+		</div>
+
+		<!-- <h4 class=" load-more">Load More</h4> -->
+	</div>
+</div>
+</div>
+</section>
+
+<footer>
+		<div class="container clr">
+			<div class="one-fourth responsive left">
+				<h4>QUICK LINKS</h4>
+				<ul class="footer-list">
+					<li><a href="#">Login</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Rates</a></li>
+					<li><a href="#">Contact us</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>SERVICES</h4>
+				<ul class="footer-list">
+					<li><a href="#">House Cleaning</a></li>
+					<li><a href="#">Move-in Cleaning</a></li>
+					<li><a href="#">Move-out Cleaning</a></li>
+					<li><a href="#">Post Construction Cleaning</a></li>
+					<li><a href="#">Pre-open House Cleaning</a></li>
+					<li><a href="#">Pre-party Cleaning</a></li>
+					<li><a href="#">Afer Party Cleaning</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>CONTACT US</h4>
+				<ul class="footer-list">
+					<li><a href="#">Schedule</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Gift Certificates</a></li>
+					<li><a href="#">Email Us</a></li>
+					<li><a href="#">Phone : 661 993 260</a></li>
+				</ul>
+			</div>
+			<div class="one-fourth responsive left">
+				<h4>FOLLOW US</h4>
+				<ul class="footer-social-list">
+					<li><a href="#"><img src="img/fb.png"></a></li>
+					<li><a href="#"><img src="img/tw.png"></a></li>
+					<li><a href="#"><img src="img/gp.png"></a></li>
+				</ul>
+				<h4>STAY CONNECTED</h4>
+				<p>We will never send you spam or some other trash</p>
+				<form class="footer-subscribe-form">
+					<input type="email" placeholder="Type your email here" id="footer-subscribe-input">
+					<input type="submit" class="btn" value=">" id="footer-subscribe-submit">
+				</form>
+			</div>
+		</div>
+		<div class="container subfooter clr">
+			<div class="half left">
+				&copy; YemmyMaids - All rights reserved
+			</div>
+			<div class="half left text-right go-to-top">
+				<span>Go to Top </span>
+				<div><img src="img/up.png"></div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
